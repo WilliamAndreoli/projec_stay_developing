@@ -1,0 +1,457 @@
+/*Variáveis*/
+:root {
+    --background-color-light: #ffffff;
+    --text-color-light: #000000;
+    --background-color-dark: #000000;
+    --text-color-dark: #ffffff;
+    --color-white: #ffffff;
+}
+
+/* Estilo da barra de rolagem */
+/* Para navegadores baseados em WebKit (Chrome, Safari) */
+::-webkit-scrollbar {
+    width: 12px; /* Largura da barra de rolagem */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #c73aff; /* Cor do indicador da barra de rolagem */
+    border-radius: 6px; /* Raio da borda do indicador da barra de rolagem */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #8000b3; /* Cor do indicador da barra de rolagem ao passar o mouse */
+}
+
+/*Config. Modos*/
+.color-toggle-button {
+    width: 40px; /* Defina uma largura adequada */
+    height: 40px; /* Defina uma altura adequada */
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+    z-index: 1000;
+    padding: 10px;
+    background-color: #c73aff;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-light {
+    background: url(../img/capa.png) no-repeat;
+    background-position: 200% -108%;
+}
+
+.home-dark {
+    background: url(../img/capa-dark.png) no-repeat;
+    background-position: 100% -108%;
+}
+
+.dark-mode {
+    font-family: Helvetica, Arial, sans-serif;
+    background-color: var(--background-color-dark);
+    color: var(--text-color-dark);
+}
+
+.card-dark {
+    background-color: #000;
+    color: #fff; /* Defina a cor do texto para contrastar com o fundo escuro */
+}
+
+.card-light {
+    background-color: #fff;
+    color: #000; /* Defina a cor do texto para contrastar com o fundo claro */
+}
+
+/*Botão de retorno ao topo*/
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+    background-color: #c73aff;
+    border-radius: 50%;
+    cursor: pointer;
+    text-align: center;
+    font-size: 18px;
+    display: none;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Layout*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html, body, #home {
+    height: 100%;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    background-color: var(--background-color-light);
+    color: var(--text-color-light);
+}
+
+/*Barra de navegação*/
+.navbar-light .navbar-nav .nav-link {
+    color: #c73aff;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #8000b3;
+} 
+
+.bg-dark {
+    background-color: #000 !important;
+}
+
+.btn-outline-dark {
+    color: #c73aff;
+    background-color: transparent;
+    background-image: none;
+    border-color: #c73aff;
+}
+
+.btn-outline-dark:hover {
+    color: white;
+    background-color: #c73aff;
+    background-image: none;
+    border-color: #000;
+}
+
+.navbar-light .navbar-toggler {
+    color: #c73aff;
+    border-color: rgba(0, 0, 0,.8);
+}
+
+.navegacao-secundaria a {
+    color: #c73aff;
+}
+
+/*Estrutura de conteúdos*/
+#home {
+    border-bottom: 1px solid #c73aff;
+    margin-top: 10%;
+}
+
+#sobre {
+    margin-top: 50px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #c73aff;
+}
+
+#servicos {
+    margin-top: 50px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #c73aff;
+}
+
+#profissional {
+    margin-top: 50px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #c73aff;
+}
+
+#fale-comigo {
+    margin-top: 50px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #c73aff;
+}
+
+#projetos {
+    margin-top: 50px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #c73aff;
+}
+
+.caixa {
+    border-top: 1px dashed #c73aff;
+    border-bottom: 1px dashed #c73aff;
+    border-radius: 10px;
+    margin-top: 10px;
+    padding-top: 10px;
+    text-align: center;
+}
+
+
+.btn-custom {
+    color: white;
+    border-radius: 500px;
+    -webkit-border-radius: 500px;
+    -moz-border-radius: 500px;
+    text-transform: uppercase;
+    background: #c73aff;
+    transition: background 0.4s, color 0.4s;
+    padding: 10px 20px;
+}
+
+.btn-custom:hover {
+    background: #9B2DC6;
+    color: #fff;
+}
+
+.btn-custom-projeto {
+    font-size: 0.7em;
+    color: white;
+    border-radius: 500px;
+    -webkit-border-radius: 500px;
+    -moz-border-radius: 500px;
+    text-transform: uppercase;
+    background: #c73aff;
+    transition: background 0.4s, color 0.4s;
+    padding: 10px 20px;
+}
+
+.btn-custom-projeto:hover {
+    background: #9B2DC6;
+    color: #fff;
+}
+
+.table-custom ul {
+    list-style-type:disc;
+}
+
+.table-custom ul li::marker {
+    color: #c73aff;
+}
+
+.img {
+    border-radius: 200px;
+    box-shadow: 20px 10px 50px #c73aff;
+}
+
+.rodape {
+    margin-top: 50px;
+    height: 50px;
+}
+
+.rodape h6 {
+    color: gray;
+    font-size: 0.8em;
+}
+
+/*Tipografia*/
+h1 {
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+#home p {
+    font-size: 1.1em;
+    margin-bottom: 1.3em;
+}
+
+#sobre p {
+    font-size: 1.1em;
+}
+
+#servicos p {
+    font-size: 1.3em;
+}
+
+#servicos h3 {
+    margin-top: 22px;
+}
+
+#projetos h4 {
+    margin-top: 20px;
+    color: #c73aff;
+    font-size: 1em;
+}
+
+.titulo-projeto {
+    font-size: 1.4em;
+}
+
+#profissional p {
+    font-size: 1.2em;
+}
+
+#profissional h1 {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+#profissional h2 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#fale-comigo h5 {
+    font-size: 1em;
+    color: gray;
+}
+
+.profissional-descricao {
+    text-align: justify;
+}
+
+h2 {
+    font-size: 1.5em;
+    color: #c73aff;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 1.8em;
+    color: #c73aff;
+    text-transform: uppercase;
+}
+
+h6 {
+    margin-top: 10px;
+    font-size: 0.9em;
+    text-transform: uppercase;
+}
+
+.texto-roxo {
+    color: #c73aff;
+}
+
+
+/*Media Queries*/
+/* Extra small devices (portrait phones, less than 576px)*/
+/* No media query since this is the default in Bootstrap*/
+@media (min-width: 300px) { 
+    #home img {
+        display: none;
+    }
+
+    #sobre img {
+        width: 200px;
+    }
+
+    #profissional img {
+        width: 300px;
+        margin-bottom: 50px;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) { 
+    #home img {
+        display: none;
+    }
+
+    .home-light {
+        background: url(../img/capa.png) no-repeat;
+        background-position: 60% -210%;
+    }
+    
+    .home-dark {
+        background: url(../img/capa-dark.png) no-repeat;
+        background-position: 60% -210%;
+    }
+
+    #sobre img {
+        width: 300px;
+    }
+
+    #profissional img {
+        margin-bottom: 50px;
+    }
+
+    #projetos img {
+        width: 300px;
+    }
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) { 
+    #home img {
+        display: block;
+        width: 400px;
+    }
+
+    #sobre img {
+        width: 350px;
+    }
+
+    #profissional img {
+        width: 300px;
+    }
+
+    #projetos img {
+        width: 500px;
+    }
+
+    .home-light {
+        background: url(../img/capa.png) no-repeat;
+        background-position: 80% -200%;
+    }
+    
+    .home-dark {
+        background: url(../img/capa-dark.png) no-repeat;
+        background-position: 80% -200%;
+    }
+
+    .navbar {
+        padding-right: 20px; /* Ajuste conforme necessário */
+        padding-left: 20px;  /* Ajuste conforme necessário */
+    }
+ }
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+    #home p {
+        font-size: 1.5em;
+    }
+
+    #home img {
+        display: block;
+        width: 600px;
+    }
+
+    .home-light {
+        background: url(../img/capa.png) no-repeat;
+        background-position: 100% -180%;
+    }
+    
+    .home-dark {
+        background: url(../img/capa-dark.png) no-repeat;
+        background-position: 100% -108%;
+    }
+
+    #sobre img {
+        width: 400px;
+    }
+
+    #profissional img {
+        width: 400px;
+    }
+    
+ }
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) { 
+
+    #profissional img {
+        width: 450px;
+    }
+
+    .home-light {
+        background: url(../img/capa.png) no-repeat;
+        background-position: 100% -108%;
+    }
+    
+    .home-dark {
+        background: url(../img/capa-dark.png) no-repeat;
+        background-position: 100% -108%;
+    }
+    
+ }

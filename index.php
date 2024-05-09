@@ -415,6 +415,14 @@
 
               </form>
 
+              <?php if(isset($_GET['enviado']) && $_GET['enviado'] == 1) { ?>
+                  <div class="row">
+                    <div class="col">
+                        <h5 class="text-success mt-2">Sua mensagem foi enviada com sucesso!</h5>
+                    </div>
+                  </div>
+              <?php } ?>
+
           </div>
         </div>
         <div class="col-md-6 mt-4 align-self-baseline">

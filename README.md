@@ -14,4 +14,3 @@ Layout responsivo para dispositivos móveis
 Tecnologias Utilizadas
 Front-end: HTML, CSS, Bootstrap, JavaScript
 Back-end: PHP
-Banco de Dados: MySQL (se aplicável)

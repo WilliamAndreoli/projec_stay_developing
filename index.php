@@ -10,11 +10,17 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
     integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
+  <!--JQuery-->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
   <!--Estilo css-->
   <link rel="stylesheet" type="text/css" href="css/estilo.css">
 
   <!--Font Awesome-->
   <script src="https://kit.fontawesome.com/96525c2b53.js" crossorigin="anonymous"></script>
+
+  <script src="js/enviaEmail.js"></script>
 
   <title>Stay Developing</title>
 </head>
@@ -396,9 +402,9 @@
       </div>
       <div class="row">
         <div class="col-md-6">
-          <div>
+          <div id="contato">
             <h2>Entre em contato:</h2>
-              <form action="processa_envio.php" method="post">
+              <form id="formEmail">
 
                 <input name="nome" class="form-control form-control-lg mt-4" type="text" id="nome"
                     placeholder="Digite seu nome completo">
@@ -411,17 +417,9 @@
                 <textarea name="conteudo" class="form-control form-control-lg mt-2" type="textarea" id="projeto"
                     placeholder="Descreva um pouco seu projeto..."></textarea>
 
-                <input class="btn btn-custom mt-3" type="submit" value="Envie sua mensagem">
+                <input id="btnForm" class="btn btn-custom mt-3" type="submit" value="Envie sua mensagem">
 
               </form>
-
-              <?php if(isset($_GET['enviado']) && $_GET['enviado'] == 1) { ?>
-                  <div class="row">
-                    <div class="col">
-                        <h5 class="text-success mt-2">Sua mensagem foi enviada com sucesso!</h5>
-                    </div>
-                  </div>
-              <?php } ?>
 
           </div>
         </div>
@@ -510,12 +508,7 @@
 
   <!--Retorna ao topo JS-->
   <script src="js/retornaAoTopo.js"></script>
-
-  <!-- JavaScript (Opcional) -->
-  <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
+ 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
     integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
     crossorigin="anonymous"></script>

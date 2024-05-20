@@ -314,7 +314,7 @@
             atrativo para aqueles que precisam de consultoria jurídica especializada e
             uma total atenção a seus casos judiciais!
           </p>
-          <a href="" class="btn btn-cust/home/william/Downloads/Desktop - 1.pngom-projeto">Ver site</a>
+          <a href="" class="btn btn-custom">Ver site</a>
         </div>
       </div>
     </div>

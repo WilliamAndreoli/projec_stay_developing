@@ -43,12 +43,12 @@
 
 .home-light {
     background: url(../img/capa.png) no-repeat;
-    background-position: 200% -108%;
+    background-position: bottom left;
 }
 
 .home-dark {
-    background: url(../img/capa-dark.png) no-repeat;
-    background-position: 100% -108%;
+    background: url(../img/capa-d.png) no-repeat;
+    background-position: bottom left;
 }
 
 .dark-mode {
@@ -348,6 +348,7 @@ h6 {
         display: none;
     }
 
+    /*
     .home-light {
         background: url(../img/capa.png) no-repeat;
         background-position: 60% -210%;
@@ -356,7 +357,7 @@ h6 {
     .home-dark {
         background: url(../img/capa-dark.png) no-repeat;
         background-position: 60% -210%;
-    }
+    }*/
 
     #sobre img {
         width: 300px;
@@ -387,9 +388,14 @@ h6 {
     }
 
     #projetos img {
-        width: 500px;
+        width: 400px;
     }
 
+    #projetos #conteudoProjeto {
+        margin-right: 40px;
+    }
+
+    /*
     .home-light {
         background: url(../img/capa.png) no-repeat;
         background-position: 80% -200%;
@@ -398,7 +404,7 @@ h6 {
     .home-dark {
         background: url(../img/capa-dark.png) no-repeat;
         background-position: 80% -200%;
-    }
+    }*/
 
     .navbar {
         padding-right: 20px; /* Ajuste conforme necessário */
@@ -417,6 +423,7 @@ h6 {
         width: 600px;
     }
 
+    /*
     .home-light {
         background: url(../img/capa.png) no-repeat;
         background-position: 100% -180%;
@@ -425,7 +432,7 @@ h6 {
     .home-dark {
         background: url(../img/capa-dark.png) no-repeat;
         background-position: 100% -108%;
-    }
+    }*/
 
     #sobre img {
         width: 400px;
@@ -433,6 +440,10 @@ h6 {
 
     #profissional img {
         width: 400px;
+    }
+
+    #projetos #conteudoProjeto {
+        margin-right: 0px;
     }
     
  }
@@ -444,6 +455,7 @@ h6 {
         width: 450px;
     }
 
+    /*
     .home-light {
         background: url(../img/capa.png) no-repeat;
         background-position: 100% -108%;
@@ -452,6 +464,6 @@ h6 {
     .home-dark {
         background: url(../img/capa-dark.png) no-repeat;
         background-position: 100% -108%;
-    }
+    }*/
     
  }

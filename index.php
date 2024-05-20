@@ -90,6 +90,7 @@
             Eleve seu négocio a outro patamar através de sites
             que captam novos clientes. Seja digital, seja atrativo,
             seja <span class="texto-roxo">Stay Developing</span>.
+            
           </p>
           <a href="#fale-comigo" class="btn btn-custom">Entre para o mundo digital</a>
         </div>
@@ -305,7 +306,7 @@
           <img src="img/projeto-adv.png">
         </div>
 
-        <div class="col-md-6 align-self-center">
+        <div id="conteudoProjeto" class="col-md-6 align-self-center">
           <h4>Desenvolvimento personalizado</h4>
           <h1 class="titulo-projeto">Institucional Advocacia Andreoli</h1>
           <p>
@@ -313,7 +314,7 @@
             atrativo para aqueles que precisam de consultoria jurídica especializada e
             uma total atenção a seus casos judiciais!
           </p>
-          <a href="" class="btn btn-custom-projeto">Ver site</a>
+          <a href="" class="btn btn-cust/home/william/Downloads/Desktop - 1.pngom-projeto">Ver site</a>
         </div>
       </div>
     </div>
